@@ -1,0 +1,186 @@
+body{
+      
+    background-color:gray;
+}
+
+
+ /* part 1 */
+.main-content{
+    
+    display:grid;
+    grid-template-columns: 300px 700px;
+    grid-template-areas:'left right';
+    min-height: 1000px;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-section{
+    
+    grid-area: left;
+    grid-column: span 1;
+    display:block;
+    background-color: rgb(51, 49, 49);
+}
+.right-section{
+    
+      grid-area: right;
+      grid-column: span 1/span 2;
+      display: block;
+
+    background-color: white;
+}
+
+ /* part-2 */
+
+.left-content{
+  padding:1rem;
+}
+
+.profile-image img{
+  display:block;
+    margin:auto;
+    width:60%;
+   border: 5px solid white;
+    border-radius: 30%;
+    padding: 1rem;
+   
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding:0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02px;
+  color:white;
+}
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+   color: white;
+}
+.designation hr{
+    
+     border:1px solid grey;
+
+}
+.description{
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+  color:white;
+}
+
+/* part-3 */
+.icon ul li a img{
+    width:3rem;
+    height: 3rem;
+    border-radius: 50px;
+   
+}
+.icon ul li{
+     display: inline;
+     margin:0.75rem;
+}
+.info ul li img{
+    
+    width:1rem;
+    height:1rem;
+}
+.info ul li{
+    color: white;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+   
+    
+}
+.skills{
+    text-align: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    color: white;
+}
+.skill-Name{
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+.progress-bar{
+  border:1px solid white;
+  height:4px;
+  background-color: white;
+}
+
+   
+    /* part-4 */
+   /* right-section */
+.right-main-content{
+    
+    padding:2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding:0.5rem;
+    letter-spacing: 1px;
+}
+.about p{
+  font-size: 0.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: darkgray;
+}
+.standard{
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.para{
+  font-size: 0.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: darkgray;
+}
+
+
+
+
+
+      /* part-5 */
+@media screen and (max-width:674px){
+  .main-content{
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+      min-height: 1000px;
+      grid-template-areas: 'left'
+      'right';
+       width: 90%;      
+
+  }   
+  .left-section{
+  grid-area: left;
+  display:block;
+  background-color: rgb(2, 74, 102); 
+}
+
+.right-section{
+  grid-area: right;
+  display:block;
+  background-color: rgb(149, 189, 241);
+  
+}
+  
+
+}
